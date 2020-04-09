@@ -1,0 +1,56 @@
+.aboutMe {
+    margin-top: 200px;
+    display: inline-flex;
+    color: white;
+}
+
+.aboutMe.image {
+    height: 312.5px;
+    width: 469.5px;
+    margin: 0px 0px 0px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutMe.description {
+    height: 312.5px;
+    margin: 0px 40px 0px 40px;
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutMe.title {
+    margin: 20px 0px 0px 20px;
+    font-size: 40px;
+}
+
+.aboutMe.body {
+    margin: 20px 20px 0px 20px;
+    line-height: 30px;
+}
+
+.aboutMe.buttons {
+    margin: 0px 40px 0px 40px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aboutMe.button {
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #ed6663;
+    border-radius: 5px;
+    color: #1b262c;
+    margin: 40px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;
+    position: relative;
+}
+
+.aboutMe.button:hover {
+    background-color: white;
+    transform: scale(1.1) perspective(10px);
+}
