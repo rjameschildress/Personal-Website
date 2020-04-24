@@ -1,3 +1,15 @@
+/* IE 11 Not Supported */
+:root{
+    --color-white: white;
+}
+
+/* BROWSER DEPENDENT 
+ JS SCROLLTO
+*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #1b262c;
     margin: 0px;
@@ -20,14 +32,14 @@ body {
 }
 
 .intro {
-    color: white;
+    color: var(--color-white);
     text-align: center;  
 }
 
 .aboutMe {
     margin-top: 200px;
     display: inline-flex;
-    color: white;
+    color: var(--color-white);
 }
 
 .art {
@@ -50,11 +62,14 @@ body {
     color: #1b262c;
     padding: 0px 20px 0px 20px;
     position: relative;
+    transform: scale(1);
+    transition: transform 300ms;
+    display: inline-block;
 }
 
 .default-button:hover {
     background-color: white;
-    transform: scale(1.5) perspective(10px);
+    transform: scale(1.2);
 }
 
 .horizontal-button-list {
@@ -111,15 +126,6 @@ body {
     text-align: center;
 }
 
-.links a {
-    color: #ed6663;
-    text-decoration: none;
-}
-
-.links a:hover {
-    color: #ffa372;
-}
-
 .text-link {
     text-decoration: none;
     color: #ed6663;
@@ -139,7 +145,7 @@ body {
 }
 
 .medium-title {
-    margin: 20px 0px 0px 20px;
+    margin: 20px 0 0 20px;
     font-size: 40px;
 }
 
@@ -154,7 +160,7 @@ body {
 
 .description-box {
     height: 312.5px;
-    margin: 0px 40px 0px 40px;
+    margin: 0 40px 0 40px;
     display: block;
     border-radius: 5px;
     background-color: rgb(65, 65, 65);
@@ -162,14 +168,14 @@ body {
 }
 
 .description-body {
-    margin: 20px 20px 0px 20px;
+    margin: 20px 20px 0 20px;
     line-height: 30px;
 }
 
 .caption {
     color: white;
     text-align: center;
-    margin: 20px, 0px, 0px, 0px;
+    margin-top: 20px;
 }
 
 
